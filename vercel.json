@@ -2,15 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "bun.build.ts",  // 如果你的构建入口文件是其他名称（如 `build.ts`），请修改此处
+      "src": "bun.build.ts",
       "use": "@vercel/bun"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"            // 将所有请求指向根路径
+      "dest": "/"
     }
   ],
-  "outputDirectory": "dist"  // 指定输出目录为 `dist`
+  "outputDirectory": "dist"
 }
