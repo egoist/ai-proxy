@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "bun.build.ts",
+      "src": "server.ts",
       "use": "@vercel/bun"
     }
   ],
