@@ -1,5 +1,5 @@
 import {serve} from '@hono/node-server'
-import app from './main'
+import app from './main.js'
 
 const port=  Number(process.env.PORT || '4000')
 serve({
