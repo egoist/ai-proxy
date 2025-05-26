@@ -35,10 +35,9 @@ const fetchWithTimeout = async (
       // @ts-expect-error
       duplex: "half",
     })
-    clearTimeout(timeoutId)
+
     return res
   } catch (error) {
-    clearTimeout(timeoutId)
     if (controller.signal.aborted) {
       return new Response("Request timeout", {
         status: 504,
@@ -46,6 +45,9 @@ const fetchWithTimeout = async (
     }
 
     throw error
+  }
+  finally {
+    clearTimeout(timeoutId)
   }
 }
 
