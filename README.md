@@ -34,6 +34,9 @@ Replace your API domain with the domain of the proxy deployed on your server. Fo
 - xAI:
   - from `https://api.xai.ai`
   - to `https://your-proxy/xai`
+- Cerebras:
+  - from `https://api.cerebras.ai`
+  - to `https://your-proxy/cerebras`
  
 ## Hosted by ChatWise
 

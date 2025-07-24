@@ -89,6 +89,10 @@ const proxies: { pathSegment: string; target: string; orHostname?: string }[] =
       target: "https://api.x.ai",
     },
     {
+      pathSegment: "cerebras",
+      target: "https://api.cerebras.ai",
+    },
+    {
       pathSegment: "googleapis-cloudcode-pa",
       target: "https://cloudcode-pa.googleapis.com",
     },
